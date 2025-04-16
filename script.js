@@ -14,19 +14,21 @@ startBtn.addEventListener("click", () => {
 toggleBtn.addEventListener("click", () => {
   if (music.paused) {
     music.play();
-    toggleBtn.textContent = "🔊 Matikan Musik";
+    toggleBtn.textContent = "🔊";
   } else {
     music.pause();
-    toggleBtn.textContent = "🔈 Mainkan Musik";
+    toggleBtn.textContent = "🔈";
   }
 });
 
-// Typing effect per slide
+// Typing effect per slide (diperbaiki agar responsif)
 const slides = [
-  "Semoga hari-harimu penuh kebahagiaan, tawa, dan cinta 🎂💖",
-  "Jangan lupa bersyukur atas semua pencapaianmu 🌟",
-  "Semoga impianmu satu per satu terwujud ✨",
-  "Tetap semangat, terus jadi versi terbaik dirimu! 💪💖",
+  "Barakallahu fii umrik yaa! 🎂💖",
+  "Semoga dengan bertambahnya umur, tambah juga berkahnya 🤲",
+  "Semoga Allah selalu jagain kamu, sehat terus dan rezekinya makin lancar 🤍✨",
+  "ndaakk cuma umur yang nambah, semoga kebaikan dan amal juga ikut nambah 🌱",
+  "Doa terbaik untukmu bahagia dunia akhirat, dilancarkan segala urusannya, hati tenang ✨",
+  "Barakallahu fii umrik yaa! 🎂💖",
 ];
 
 let slideIndex = 0;
@@ -40,7 +42,7 @@ function typeNextChar() {
   } else {
     setTimeout(() => {
       eraseText();
-    }, 2000); // tunggu 2 detik sebelum menghapus
+    }, 2000);
   }
 }
 
@@ -57,7 +59,7 @@ function eraseText() {
 
 typeNextChar();
 
-// Confetti
+// Confetti effect
 const canvas = document.getElementById("confetti");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
