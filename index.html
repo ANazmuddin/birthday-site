@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h1>🎉 Tap untuk Memulai 🎶</h1>
+    <button id="start-btn">Mulai</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container" style="display: none;">
+    <h1 class="title animated-text">Selamat Ulang Tahun!</h1>
+    <div class="image-container">
+      <img src="assets/images/ChatGPT Image Apr 11, 2025, 06_57_44 PM.png" alt="Birthday Person" />
+    </div>
+
+    <!-- Slideshow Typing -->
+    <div class="slideshow-container">
+      <p id="typing-text"></p>
+    </div>
+
+    <button id="music-toggle">🔊 Matikan Musik</button>
+  </div>
+
+  <audio id="bg-music" src="assets/music/happy-birthday-to-you-bossa-nova-style-arrangement-21399.mp3" loop></audio>
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
